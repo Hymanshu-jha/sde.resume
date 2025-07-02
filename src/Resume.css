@@ -1,0 +1,162 @@
+/* Resume.css */
+
+body {
+  background: white;
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #1e40af;
+  background: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header-title {
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header-contact,
+.header-links {
+  font-weight: 600;
+  color: #1e40af;
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.header-links a {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 12px;
+  page-break-inside: avoid;
+}
+
+.section h2 {
+  color: #1e3a8a;
+  border-bottom: 1px solid #1e40af;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  color: #888;
+  font-weight: 600;
+  font-size: 11px;
+  margin-left: auto;
+}
+
+.edu-entry,
+.experience-entry,
+.project-entry {
+  margin-bottom: 8px;
+}
+
+.edu-degree,
+.experience-title,
+.project-title {
+  color: #1e40af;
+  font-weight: bold;
+}
+
+.edu-school,
+.experience-duration,
+.project-duration {
+  font-weight: 600;
+}
+
+.skill-category {
+  margin-bottom: 3px;
+}
+
+.skill-heading {
+  color: #1e40af;
+  font-weight: bold;
+}
+
+.experience-list,
+.project-list {
+  margin-left: 15px;
+  padding-left: 0;
+}
+
+.experience-list li,
+.project-list li {
+  margin-bottom: 3px;
+}
+
+.print-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #1e40af;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.print-button:hover {
+  background-color: #1e3a8a;
+}
+
+@media print {
+  .print-button {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    line-height: 1.1;
+    background: #fff;
+  }
+
+  .resume-container {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    width: 100%;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0.5in;
+  }
+}
