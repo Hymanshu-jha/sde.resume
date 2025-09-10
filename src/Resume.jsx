@@ -2,177 +2,158 @@ import React from "react";
 import "./Resume.css";
 
 const resumeData = {
-  name: "Himanshu Jha",
+  name: "Himanshu Kumar",
+  profession: "Computer Science and Engineering Student",
   email: "himanshujhaa4262@gmail.com",
   phone: "+91-8591227854",
-  location: "Nagpur, Maharashtra",
+  location: "VNIT College, Bajaj Nagar, Nagpur, Maharashtra - 440010",
   linkedin: "https://www.linkedin.com/in/himanshu-kumar-a83388342/",
   github: "https://github.com/Hymanshu-jha/",
   leetcode: "https://leetcode.com/u/kaadhale/",
   summary:
-    "Computer Science Engineering student with expertise in full-stack web development, backend architecture, and real-time systems. Proficient in JavaScript, Node.js, React, MongoDB, and cloud technologies. Experienced in building scalable applications with modern frameworks and databases. Seeking a backend developer role to apply skills in designing performant systems.",
+    "Computer Science and Engineering student skilled in full-stack development, backend systems, and cloud technologies. Proficient in C++, JavaScript, Node.js, React.js, and databases like MongoDB & MySQL. Exploring ML, DL, and agentic AI frameworks. Seeking a backend developer role to apply skills in building scalable systems.",
   education: [
     {
-      degree: "Bachelor of Technology in Computer Science Engineering",
-      institution: "Visvesvaraya National Institute of Technology (VNIT), Nagpur",
-      year: "2022 - 2026",
-      grade: "Expected Graduation: May 2026",
+      degree: "B.Tech in Computer Science and Engineering",
+      institution: "Visvesvaraya National Institute of Technology, Nagpur",
+      year: "2026",
+      grade: "6.24 CGPA",
     },
     {
-      degree: "Higher Secondary Education in Science",
-      institution: "MMTM College, Darbhanga",
-      year: "2015 - 2017",
-      grade: "",
+      degree: "Class XII",
+      institution: "M M TM College, Darbhanga (BSEB)",
+      year: "2017",
+      grade: "71%",
     },
-  ],
-  experience: [
     {
-      title: "Software Developer",
-      company: "Personal Projects",
-      duration: "2024 - Present",
-      responsibilities: [
-        "Developed full-stack web applications using MERN stack focused on performance optimization.",
-        "Implemented real-time communication systems using WebSockets and WebRTC for video calling.",
-        "Built scalable backend APIs using Node.js and Express.js integrated with MongoDB.",
-        "Optimized real-time messaging systems achieving 40% lower latency.",
-        "Designed job queue systems with BullMQ for handling 10,000+ concurrent tasks.",
-      ],
+      degree: "Class X",
+      institution: "D A V Public, Darbhanga (CBSE)",
+      year: "2015",
+      grade: "84%",
     },
   ],
-  skills: {
-    "Programming Languages": ["JavaScript", "TypeScript", "HTML5", "CSS3", "MySQL"],
-    "Frameworks & Libraries": ["Node.js", "Express.js", "React", "Next.js", "Redux", "TailwindCSS"],
-    Databases: ["MongoDB", "Redis", "MySQL", "Database Design"],
-    "Tools & Technologies": ["Git", "Docker", "Linux", "Postman", "VS Code", "Vercel"],
-    Specializations: ["REST APIs", "WebSockets", "WebRTC", 'ZegoCloud', "Authentication", "BullMQ", "Socket.io", "Asynchronous Programming", "Data Structures & Algorithms"],
-  },
+  skills: [
+    "C++", "JavaScript", "MySQL", "Node.js", "WebSockets",
+    "React.js", "DSA", "Postman", "Visual Studio Code"
+  ],
   projects: [
     {
-      title: "Real-Time Chat Application with Video Calling",
-      duration: "2024",
+      title: "Sorting Visualizer",
+      duration: "Aug 2025",
       description:
-        "Full-stack MERN application with real-time messaging and video calling capabilities.",
-      achievements: [
-        "Built custom WebSocket implementation achieving 40% lower latency than Socket.io.",
-        "Integrated WebRTC for peer-to-peer video calling functionality.",
-        "Implemented BullMQ job queues for processing 10,000+ email verification tasks.",
-        "Designed MongoDB schema with optimized indexes for fast message retrieval.",
-        "Created responsive React frontend with real-time UI updates.",
-      ],
-      technologies:
-        "Node.js, Express.js, MongoDB, Redis, BullMQ, WebSockets, WebRTC, React, TailwindCSS, Docker",
-      url: "https://chat-app-rho-ashy.vercel.app/",
+        "Created an interactive React project to visualize Bubble, Selection, Insertion, Merge, and Quick Sort algorithms with animations. Delivered an educational tool that demonstrates sorting logic.",
+      technologies: "React, JavaScript, Algorithm Design",
+      url: "https://sorting-visualizer-xi-ebon.vercel.app/"
     },
     {
-      title: "Email Verification System",
-      duration: "2024",
+      title: "bookIt (Appointment Booking Platform)",
+      duration: "Jun 2025 - Jul 2025",
       description:
-        "Scalable email verification system with queue-based processing.",
-      achievements: [
-        "Developed asynchronous email processing system using BullMQ for scalability.",
-        "Implemented NodeMailer integration with custom email templates.",
-        "Built retry mechanisms and failure handling for reliable email delivery.",
-        "Created RESTful APIs for user registration and verification workflows.",
-      ],
-      technologies:
-        "Node.js, Express.js, BullMQ, NodeMailer, MongoDB, Redis",
+        "Developed an appointment booking platform with scheduling, authentication, payments, geolocation, and notifications. Built a secure and scalable booking system with integrated payment processing, real-time notifications.",
+      technologies: "MongoDB, Express.js, React, Node.js, Stripe, Leaflet.js, OpenStreetMap API, BullMQ",
+      url: "https://appointment-booking-system-tau.vercel.app/"
+    },
+    {
+      title: "Convoo (Full-stack Chat App)",
+      duration: "May 2025 - Jun 2025",
+      description:
+        "Built a full-stack MERN application enabling real-time messaging and video calling with a responsive frontend and optimized backend. Delivered a production-ready chat platform with low-latency communication and live UI updates.",
+      technologies: "Node.js, Express.js, MongoDB, BullMQ, WebSockets, React",
+      url: "https://chat-app-rho-ashy.vercel.app/"
+    },
+    {
+      title: "Heap Memory Allocation Simulator",
+      duration: "Mar 2024",
+      description:
+        "Implemented a dynamic memory allocation and deallocation simulator in C mimicking heap management with linked lists, including allocation, deallocation, and block merging strategies. Delivered an interactive console tool, displaying status in realtime for understanding low-level memory management.",
+      technologies: "C, dynamic memory allocation (malloc, calloc), linked lists, sorting algorithms",
+      url: "https://github.com/Hymanshu-jha/System_Programming"
+    },
+    {
+      title: "Symbol Table & Lookup System",
+      duration: "Feb 2024",
+      description:
+        "Implemented a hash-based symbol table with insertion, search, and scope management, ensuring efficient variable handling in nested scopes. Used C, file handling, data structures (hashing), and compiler design concepts.",
+      technologies: "C, File Handling, Hashing, Compiler Design",
+      url: "https://github.com/Hymanshu-jha/System_Programming"
     },
   ],
+  languages: ["Hindi", "English"],
 };
 
 const Resume = () => {
-  const handlePrint = () => {
-    window.print();
-  };
+  const handlePrint = () => window.print();
 
   return (
     <div className="resume-container">
-      <div className="header">
-        <h1 className="header-title">{resumeData.name}</h1>
-        <div className="header-contact">
-          {resumeData.email} | {resumeData.phone} | {resumeData.location}
+      <header>
+        <h1 className="resume-name">{resumeData.name}</h1>
+        <div className="resume-profession">{resumeData.profession}</div>
+        <div className="resume-contact">
+          <span>{resumeData.email}</span> | <span>{resumeData.phone}</span> | <span>{resumeData.location}</span>
         </div>
-        <div className="header-links">
-          <span><strong>LinkedIn:</strong> <a href={resumeData.linkedin}>{resumeData.linkedin}</a></span> |{' '}
-          <span><strong>GitHub:</strong> <a href={resumeData.github}>{resumeData.github}</a></span> |{' '}
-          <span><strong>LeetCode:</strong> <a href={resumeData.leetcode}>{resumeData.leetcode}</a></span>
+        <div className="resume-links">
+          <a href={resumeData.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href={resumeData.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href={resumeData.leetcode} target="_blank" rel="noopener noreferrer">LeetCode</a>
         </div>
-      </div>
+      </header>
 
-      <div className="section">
+      <section>
         <h2>Professional Summary</h2>
         <p>{resumeData.summary}</p>
-      </div>
+      </section>
 
-      <div className="section">
+      <section>
         <h2>Education</h2>
-        {resumeData.education.map((edu, idx) => (
-          <div key={idx} className="edu-entry flex-row">
-            <div>
-              <div className="edu-degree">{edu.degree}</div>
-              <div className="edu-school">{edu.institution}</div>
-            </div>
-            <div className="date">{edu.year} {edu.grade && `| ${edu.grade}`}</div>
-          </div>
-        ))}
-      </div>
-
-      <div className="section">
-        <h2>Technical Skills</h2>
-        {Object.entries(resumeData.skills).map(([category, skills]) => (
-          <div key={category} className="skill-category">
-            <span className="skill-heading">{category}: </span>
-            <span className="skill-list">{skills.join(", ")}</span>
-          </div>
-        ))}
-      </div>
-
-      <div className="section">
-        <h2>Experience</h2>
-        {resumeData.experience.map((exp, idx) => (
-          <div key={idx} className="experience-entry">
-            <div className="flex-row">
-              <span className="experience-title">{exp.title} | {exp.company}</span>
-              <span className="date">{exp.duration}</span>
-            </div>
-            <ul className="experience-list">
-              {exp.responsibilities.map((resp, i) => (
-                <li key={i}>{resp}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <div className="section">
-        <h2>Projects</h2>
-        {resumeData.projects.map((proj, idx) => (
-          <div key={idx} className="project-entry">
-            <div className="flex-row">
-              <span className="project-title">{proj.title}</span>
-              <span className="date">{proj.duration}</span>
-            </div>
-            <div className="project-description">{proj.description}</div>
-            <ul className="project-list">
-              {proj.achievements.map((ach, i) => (
-                <li key={i}>{ach}</li>
-              ))}
-            </ul>
-            <div className="project-technologies">
-              <strong>Technologies:</strong> {proj.technologies}
-            </div>
-            {proj.url && (
-              <div className="project-link">
-                <strong>Live Demo:</strong> <a href={proj.url}>{proj.url}</a>
+        <div className="education-list">
+          {resumeData.education.map((edu, idx) => (
+            <div className="education-row" key={idx}>
+              <div className="edu-left">
+                <strong>{edu.degree}</strong><br />
+                {edu.institution}
+                <span className="edu-year"> ({edu.year})</span>
               </div>
-            )}
-          </div>
-        ))}
-      </div>
+              <div className="edu-grade">{edu.grade}</div>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <button className="print-button" onClick={handlePrint}>
-        Download PDF
-      </button>
+      <section>
+        <h2>Technical Skills</h2>
+        <div className="skills-list">
+          {resumeData.skills.map((skill, idx) => (<span className="skill-badge" key={idx}>{skill}</span>))}
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div className="projects-list">
+          {resumeData.projects.map((proj, idx) => (
+            <div className="project-card" key={idx}>
+              <div className="project-header">
+                <span className="project-title">{proj.title}</span>
+                <span className="project-date">{proj.duration}</span>
+              </div>
+              <div className="project-description">{proj.description}</div>
+              <div className="project-tech"><strong>Technologies:</strong> {proj.technologies}</div>
+              <div><a href={proj.url} target="_blank">View Project</a></div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <div className="language-list">
+          {resumeData.languages.map((lang, idx) => (<span className="lang-badge" key={idx}>{lang}</span>))}
+        </div>
+      </section>
+
+      <footer>
+        <button className="btn-download" onClick={handlePrint}>Download PDF Resume</button>
+      </footer>
     </div>
   );
 };

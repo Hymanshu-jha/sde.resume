@@ -1,4 +1,4 @@
-// src/App.js
+import React from 'react';
 import Resume from './Resume';
 
 
@@ -9,7 +9,6 @@ function App() {
   return (
   <>
   <Resume />
-{/* url: 'https://chat-app-rho-ashy.vercel.app/' */}
   </>
   );
 }
