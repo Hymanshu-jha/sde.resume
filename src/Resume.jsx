@@ -11,7 +11,7 @@ const resumeData = {
   github: "https://github.com/Hymanshu-jha/",
   leetcode: "https://leetcode.com/u/kaadhale/",
   summary:
-    "Computer Science and Engineering student skilled in full-stack development, backend systems, and cloud technologies. Proficient in C++, JavaScript, Node.js, React.js, and databases like MongoDB & MySQL. Exploring ML, DL, and agentic AI frameworks. Seeking a backend developer role to apply skills in building scalable systems.",
+    "Computer Science and Engineering student skilled in full-stack development, backend systems. Proficient in C++, JavaScript, Node.js, React.js, and MySQL. Currently Exploring AI/ML. Seeking a backend developer role to apply skills in building scalable systems.",
   education: [
     {
       degree: "B.Tech in Computer Science and Engineering",
