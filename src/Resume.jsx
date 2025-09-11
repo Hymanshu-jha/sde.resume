@@ -1,5 +1,6 @@
 import React from "react";
 import "./Resume.css";
+import html2pdf from "html2pdf.js"; 
 
 const resumeData = {
   name: "Himanshu Kumar",
@@ -81,8 +82,24 @@ const resumeData = {
   languages: ["Hindi", "English"],
 };
 
+
+
+
 const Resume = () => {
-  const handlePrint = () => window.print();
+  const handleDownloadPDF = (size = "A0") => {
+    const element = document.querySelector(".resume-container");
+
+    const options = {
+      margin: 0,
+      filename: `Himanshu_Kumar_Resume_${size}.pdf`,
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 4, useCORS: true },
+      jsPDF: { unit: "mm", format: size, orientation: "portrait" },
+      pagebreak: { mode: ["avoid-all", "css", "legacy"] }
+    };
+
+    html2pdf().set(options).from(element).save();
+  };
 
   return (
     <div className="resume-container">
@@ -123,7 +140,9 @@ const Resume = () => {
       <section>
         <h2>Technical Skills</h2>
         <div className="skills-list">
-          {resumeData.skills.map((skill, idx) => (<span className="skill-badge" key={idx}>{skill}</span>))}
+          {resumeData.skills.map((skill, idx) => (
+            <span className="skill-badge" key={idx}>{skill}</span>
+          ))}
         </div>
       </section>
 
@@ -137,8 +156,12 @@ const Resume = () => {
                 <span className="project-date">{proj.duration}</span>
               </div>
               <div className="project-description">{proj.description}</div>
-              <div className="project-tech"><strong>Technologies:</strong> {proj.technologies}</div>
-              <div><a href={proj.url} target="_blank">View Project</a></div>
+              <div className="project-tech">
+                <strong>Technologies:</strong> {proj.technologies}
+              </div>
+              <div>
+                <a href={proj.url} target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
             </div>
           ))}
         </div>
@@ -147,12 +170,17 @@ const Resume = () => {
       <section>
         <h2>Languages</h2>
         <div className="language-list">
-          {resumeData.languages.map((lang, idx) => (<span className="lang-badge" key={idx}>{lang}</span>))}
+          {resumeData.languages.map((lang, idx) => (
+            <span className="lang-badge" key={idx}>{lang}</span>
+          ))}
         </div>
       </section>
 
       <footer>
-        <button className="btn-download" onClick={handlePrint}>Download PDF Resume</button>
+        {/* ✅ Changed here: no window.print(), uses html2pdf */}
+        <button className="btn-download" onClick={() => handleDownloadPDF("A1")}>
+          Download PDF
+        </button>
       </footer>
     </div>
   );

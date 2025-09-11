@@ -1,5 +1,6 @@
-/* Resume.css */
+/* Resume.css - Final Version with Border + Clean Print */
 
+/* Base Styles */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #ffffff;
@@ -16,11 +17,14 @@ body {
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+
+  /* ✅ Added border */
+  border: 2px solid #0a1f44;
 }
 
 /* ---------- HEADER ---------- */
 header {
-  background-color: #0a1f44; /* dark blue */
+  background-color: #0a1f44;
   color: white;
   text-align: center;
   padding: 25px 20px;
@@ -196,4 +200,58 @@ footer {
 
 .btn-download:hover {
   background: #142e66;
+}
+
+/* --- PRINT STYLING FOR A0 --- */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page {
+    size: A0 portrait;
+    margin: 20mm;
+  }
+
+  .resume-container {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+    box-shadow: none;
+
+    /* ✅ Remove rounded corners for formal PDF look */
+    border-radius: 0;
+
+    /* ✅ Keep border in print */
+    border: 2px solid #0a1f44;
+
+    padding: 0;
+    transform: none;
+  }
+
+  header {
+    background-color: #0a1f44 !important;
+    color: #ffffff !important;
+  }
+
+  .resume-links a {
+    color: #ffffff !important;
+  }
+
+  section,
+  header,
+  footer {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* ✅ Hide footer + download button in PDF */
+  footer,
+  .btn-download {
+    display: none !important;
+    visibility: hidden !important;
+  }
 }
