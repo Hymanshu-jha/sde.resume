@@ -86,19 +86,12 @@ const resumeData = {
 
 
 const Resume = () => {
-  const handleDownloadPDF = (size = "A0") => {
-    const element = document.querySelector(".resume-container");
-
-    const options = {
-      margin: 0,
-      filename: `Himanshu_Kumar_Resume_${size}.pdf`,
-      image: { type: "jpeg", quality: 1 },
-      html2canvas: { scale: 4, useCORS: true },
-      jsPDF: { unit: "mm", format: size, orientation: "portrait" },
-      pagebreak: { mode: ["avoid-all", "css", "legacy"] }
-    };
-
-    html2pdf().set(options).from(element).save();
+  const handleDownloadPDF = () => {
+    // Directly point to the PDF inside public/
+    const link = document.createElement("a");
+    link.href = "/Himanshu_Kumar_Resume.pdf"; // Path relative to public folder
+    link.download = "Himanshu_Kumar_Resume.pdf"; // Suggested download name
+    link.click();
   };
 
   return (
