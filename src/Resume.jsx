@@ -1,182 +1,375 @@
 import React from "react";
-import "./Resume.css";
-import html2pdf from "html2pdf.js"; 
 
 const resumeData = {
   name: "Himanshu Kumar",
-  profession: "Computer Science and Engineering Student",
+  profession: "Aspiring Software Engineer",
   email: "himanshujhaa4262@gmail.com",
   phone: "+91-8591227854",
-  location: "VNIT College, Bajaj Nagar, Nagpur, Maharashtra - 440010",
+  location: "Nagpur, Maharashtra, INDIA",
   linkedin: "https://www.linkedin.com/in/himanshu-kumar-a83388342/",
   github: "https://github.com/Hymanshu-jha/",
   leetcode: "https://leetcode.com/u/kaadhale/",
   summary:
-    "Computer Science student skilled in full-stack development and backend systems with C++, JavaScript, Node.js, React.js, and MySQL. Passionate about learning new technologies, exploring AI/ML, and building scalable, high-performance applications. Seeking a Software Developer role to grow and contribute in dynamic environments.",
+    "Aspiring Software Engineer pursuing B.Tech in Computer Science with demonstrated expertise in developing innovative, scalable, and user-focused applications. Proficient in full-stack development using JavaScript, React.js, Node.js, and MERN stack technologies. Experienced in building real-time communication platforms, implementing secure authentication systems, and developing interactive educational tools. Skilled in algorithm visualization, system programming, and backend architecture design. Strong foundation in data structures, database management, and modern web technologies. Demonstrates excellent problem-solving abilities, code optimization skills, and commitment to continuous learning in fast-paced development environments.",
   education: [
     {
-      degree: "B.Tech in Computer Science and Engineering",
+      degree: "B.Tech/B.E. | Computer Science",
       institution: "Visvesvaraya National Institute of Technology, Nagpur",
-      year: "2026",
-      grade: "6.24 CGPA",
+      location: "Nagpur, Maharashtra",
+      duration: "Aug 2022 - May 2026",
     },
     {
       degree: "Class XII",
-      institution: "M M TM College, Darbhanga (BSEB)",
-      year: "2017",
-      grade: "71%",
+      institution: "M M TM College, Darbhanga",
+      location: "Darbhanga, Bihar",
+      duration: "2017",
     },
     {
       degree: "Class X",
-      institution: "D A V Public, Darbhanga (CBSE)",
-      year: "2015",
-      grade: "84%",
+      institution: "D A V Public School, Darbhanga",
+      location: "Darbhanga, Bihar",
+      duration: "2015",
     },
   ],
   skills: [
-    "C++", "JavaScript", "MySQL", "Node.js", "WebSockets",
-    "React.js", "DSA", "Postman", "Visual Studio Code"
+    "C++", "JavaScript", "React.js", "Node.js", "Express.js",
+    "MySQL", "WebSockets", "REST APIs", "JWT Authentication",
+    "Data Structures", "AWS", "Stripe", "GitHub", "Postman", "Agile Methodologies"
   ],
   projects: [
     {
-      title: "Sorting Visualizer",
-      duration: "Aug 2025",
-      description:
-        "Created an interactive React project to visualize Bubble, Selection, Insertion, Merge, and Quick Sort algorithms with animations. Delivered an educational tool that demonstrates sorting logic.",
-      technologies: "React, JavaScript, Algorithm Design",
-      url: "https://sorting-visualizer-xi-ebon.vercel.app/"
+      title: "Convoo — Real-Time Chat and Video Communication Platform",
+      duration: "May 2025 - Jun 2025",
+      durationBadge: "2 Months",
+      techStack: "MERN (MongoDB, Express.js, React.js, Node.js), WebSocket, ZegoCloud, REST APIs, JWT Authentication",
+      points: [
+        "Developed and deployed a full-stack MERN application enabling real-time messaging and peer-to-peer video calling using WebSocket and ZegoCloud, enhancing user communication experience.",
+        "Implemented secure user authentication and authorization using JWT and bcrypt, ensuring robust data privacy and session management.",
+        "Optimized backend performance with Express.js and MongoDB, achieving low-latency communication and scalable message handling for concurrent users.",
+        "Deployed application using Render (backend) and Vercel (frontend), establishing continuous integration pipeline and ensuring high availability."
+      ],
+      url: "https://chat-app-rho-ashy.vercel.app/"
     },
     {
-      title: "bookIt (Appointment Booking Platform)",
+      title: "BookIt — Smart Appointment Scheduling Platform",
       duration: "Jun 2025 - Jul 2025",
-      description:
-        "Developed an appointment booking platform with scheduling, authentication, payments, geolocation, and notifications. Built a secure and scalable booking system with integrated payment processing, real-time notifications.",
-      technologies: "MongoDB, Express.js, React, Node.js, Stripe, Leaflet.js, OpenStreetMap API, BullMQ",
+      durationBadge: "2 Months",
+      techStack: "MERN (MongoDB, Express.js, React.js, Node.js), Stripe API, JWT Authentication, OAuth2.0, OpenStreet API",
+      points: [
+        "Developed a comprehensive full-stack appointment scheduling platform enabling users to book, manage, and track appointments with integrated authentication and role-based access control.",
+        "Integrated Stripe payment gateway and OpenStreet API, enabling seamless financial transactions and easy discovery of nearby service providers for enhanced user experience.",
+        "Designed a scalable backend architecture with Node.js and Express.js, ensuring high performance and fault tolerance under concurrent usage scenarios.",
+        "Implemented OAuth2.0 for secure third-party authentication and authorization, improving platform security and user onboarding experience."
+      ],
       url: "https://appointment-booking-system-tau.vercel.app/"
     },
     {
-      title: "Convoo (Full-stack Chat App)",
-      duration: "May 2025 - Jun 2025",
-      description:
-        "Built a full-stack MERN application enabling real-time messaging and video calling with a responsive frontend and optimized backend. Delivered a production-ready chat platform with low-latency communication and live UI updates.",
-      technologies: "Node.js, Express.js, MongoDB, BullMQ, WebSockets, React",
-      url: "https://chat-app-rho-ashy.vercel.app/"
+      title: "Sorting Visualizer — Interactive Algorithm Visualization Tool",
+      duration: "Aug 2025",
+      durationBadge: "1 Month",
+      techStack: "React.js, JavaScript",
+      points: [
+        "Developed an interactive React.js application to visualize multiple sorting algorithms including Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort with animated step-by-step demonstrations.",
+        "Delivered an educational tool demonstrating step-wise sorting logic and algorithm efficiency, enhancing understanding of computational complexity and algorithm behavior.",
+        "Implemented dynamic speed controls and array size customization, providing flexible learning experience for users at different skill levels."
+      ],
+      url: "https://sorting-visualizer-xi-ebon.vercel.app/"
     },
     {
       title: "Heap Memory Allocation Simulator",
       duration: "Mar 2024",
-      description:
-        "Implemented a dynamic memory allocation and deallocation simulator in C mimicking heap management with linked lists, including allocation, deallocation, and block merging strategies. Delivered an interactive console tool, displaying status in realtime for understanding low-level memory management.",
-      technologies: "C, dynamic memory allocation (malloc, calloc), linked lists, sorting algorithms",
+      durationBadge: "1 Month",
+      techStack: "C Programming",
+      points: [
+        "Implemented a dynamic memory allocation and deallocation simulator in C, mimicking heap management processes to demonstrate low-level memory operations.",
+        "Delivered an interactive console-based tool to allocate and deallocate memory blocks, merge adjacent free blocks, and display memory status in real time.",
+        "Enhanced understanding of operating system memory management concepts including fragmentation, coalescing, and memory block tracking."
+      ],
       url: "https://github.com/Hymanshu-jha/System_Programming"
     },
     {
       title: "Symbol Table & Lookup System",
       duration: "Feb 2024",
-      description:
-        "Implemented a hash-based symbol table with insertion, search, and scope management, ensuring efficient variable handling in nested scopes. Used C, file handling, data structures (hashing), and compiler design concepts.",
-      technologies: "C, File Handling, Hashing, Compiler Design",
+      durationBadge: "1 Month",
+      techStack: "C Programming, Data Structures",
+      points: [
+        "Implemented hash-based symbol table with insertion, search, and scope management functionalities, ensuring efficient variable handling in nested scopes.",
+        "Developed collision resolution mechanisms and scope stack management for compiler design applications.",
+        "Optimized lookup operations using hash functions, achieving O(1) average-case time complexity for symbol retrieval."
+      ],
       url: "https://github.com/Hymanshu-jha/System_Programming"
     },
   ],
-  languages: ["Hindi", "English"],
+  languages: ["English", "Hindi"],
 };
-
-
-
 
 const Resume = () => {
   const handleDownloadPDF = () => {
-    // Directly point to the PDF inside public/
-    const link = document.createElement("a");
-    link.href = "/Himanshu_Kumar_Resume.pdf"; // Path relative to public folder
-    link.download = "Himanshu_Kumar_Resume.pdf"; // Suggested download name
-    link.click();
+    window.print();
   };
 
   return (
-    <div className="resume-container">
-      <header>
-        <h1 className="resume-name">{resumeData.name}</h1>
-        <div className="resume-profession">{resumeData.profession}</div>
-        <div className="resume-contact">
-          <span>{resumeData.email}</span> | <span>{resumeData.phone}</span> | <span>{resumeData.location}</span>
-        </div>
-        <div className="resume-links">
-          <a href={resumeData.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href={resumeData.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href={resumeData.leetcode} target="_blank" rel="noopener noreferrer">LeetCode</a>
-        </div>
-      </header>
+    <div style={styles.body}>
+      <div style={styles.container}>
+        <header style={styles.header}>
+          <h1 style={styles.name}>{resumeData.name}</h1>
+          <div style={styles.title}>{resumeData.profession}</div>
+          <div style={styles.contactInfo}>
+            {resumeData.phone} | {resumeData.email} | {resumeData.location}
+          </div>
+          <div style={styles.links}>
+            <a href={resumeData.linkedin} target="_blank" rel="noopener noreferrer" style={styles.link}>LinkedIn</a>
+            {" | "}
+            <a href={resumeData.github} target="_blank" rel="noopener noreferrer" style={styles.link}>GitHub</a>
+            {" | "}
+            <a href={resumeData.leetcode} target="_blank" rel="noopener noreferrer" style={styles.link}>LeetCode</a>
+          </div>
+        </header>
 
-      <section>
-        <h2>Professional Summary</h2>
-        <p>{resumeData.summary}</p>
-      </section>
+        <div style={styles.summary}>
+          {resumeData.summary}
+        </div>
 
-      <section>
-        <h2>Education</h2>
-        <div className="education-list">
+        <div style={styles.section}>
+          <div style={styles.sectionTitle}>Technical Skills</div>
+          <div style={styles.skillsList}>
+            {resumeData.skills.map((skill, idx) => (
+              <span key={idx} style={styles.skillItem}>{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        <div style={styles.section}>
+          <div style={styles.sectionTitle}>Projects</div>
+          {resumeData.projects.map((project, idx) => (
+            <div key={idx} style={styles.projectItem}>
+              <div style={styles.projectHeader}>
+                <div style={styles.projectTitle}>{project.title}</div>
+                <div style={styles.duration}>
+                  {project.duration}
+                  <span style={styles.durationBadge}>{project.durationBadge}</span>
+                </div>
+              </div>
+              <div style={styles.techStack}>Tech Stack: {project.techStack}</div>
+              <div style={styles.projectDetails}>
+                <ul style={styles.projectList}>
+                  {project.points.map((point, pIdx) => (
+                    <li key={pIdx} style={styles.projectListItem}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+              <div style={styles.projectLink}>
+                <a href={project.url} target="_blank" rel="noopener noreferrer" style={styles.link}>
+                  link
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div style={styles.section}>
+          <div style={styles.sectionTitle}>Education</div>
           {resumeData.education.map((edu, idx) => (
-            <div className="education-row" key={idx}>
-              <div className="edu-left">
-                <strong>{edu.degree}</strong><br />
-                {edu.institution}
-                <span className="edu-year"> ({edu.year})</span>
+            <div key={idx} style={styles.educationItem}>
+              <div style={styles.educationHeader}>
+                <div style={styles.educationDegree}>{edu.degree}</div>
+                <div style={styles.duration}>{edu.duration}</div>
               </div>
-              <div className="edu-grade">{edu.grade}</div>
+              <div style={styles.institution}>{edu.institution}</div>
+              <div style={styles.location}>{edu.location}</div>
             </div>
           ))}
         </div>
-      </section>
 
-      <section>
-        <h2>Technical Skills</h2>
-        <div className="skills-list">
-          {resumeData.skills.map((skill, idx) => (
-            <span className="skill-badge" key={idx}>{skill}</span>
-          ))}
+        <div style={styles.section}>
+          <div style={styles.sectionTitle}>Additional Information</div>
+          <div style={styles.additionalInfo}>
+            <strong>Languages:</strong> {resumeData.languages.join(", ")} (Proficient)
+          </div>
         </div>
-      </section>
 
-      <section>
-        <h2>Projects</h2>
-        <div className="projects-list">
-          {resumeData.projects.map((proj, idx) => (
-            <div className="project-card" key={idx}>
-              <div className="project-header">
-                <span className="project-title">{proj.title}</span>
-                <span className="project-date">{proj.duration}</span>
-              </div>
-              <div className="project-description">{proj.description}</div>
-              <div className="project-tech">
-                <strong>Technologies:</strong> {proj.technologies}
-              </div>
-              <div>
-                <a href={proj.url} target="_blank" rel="noopener noreferrer">View Project</a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <h2>Languages</h2>
-        <div className="language-list">
-          {resumeData.languages.map((lang, idx) => (
-            <span className="lang-badge" key={idx}>{lang}</span>
-          ))}
-        </div>
-      </section>
-
-      <footer>
-        {/* ✅ Changed here: no window.print(), uses html2pdf */}
-        <button className="btn-download" onClick={() => handleDownloadPDF("A1")}>
-          Download PDF
-        </button>
-      </footer>
+        <footer style={styles.footer}>
+          <button style={styles.btnDownload} onClick={handleDownloadPDF}>
+            Download PDF
+          </button>
+        </footer>
+      </div>
     </div>
   );
+};
+
+const styles = {
+  body: {
+    fontFamily: "Arial, sans-serif",
+    lineHeight: "1.6",
+    color: "#333",
+    background: "#f5f5f5",
+    padding: "40px 20px",
+    margin: 0,
+  },
+  container: {
+    maxWidth: "900px",
+    margin: "0 auto",
+    background: "white",
+    boxShadow: "0 0 20px rgba(0,0,0,0.1)",
+  },
+  header: {
+    marginBottom: "30px",
+    padding: "20px 40px",
+    background: "#fff",
+    borderBottom: "3px solid #000",
+  },
+  name: {
+    fontSize: "32px",
+    fontWeight: "bold",
+    margin: "0 0 5px 0",
+    color: "#000",
+  },
+  title: {
+    fontSize: "16px",
+    color: "#666",
+    marginBottom: "15px",
+  },
+  contactInfo: {
+    fontSize: "14px",
+    color: "#333",
+    marginBottom: "10px",
+  },
+  links: {
+    fontSize: "14px",
+    marginTop: "10px",
+  },
+  link: {
+    color: "#0066cc",
+    textDecoration: "none",
+  },
+  summary: {
+    padding: "0 40px",
+    marginBottom: "30px",
+    fontSize: "14px",
+    lineHeight: "1.7",
+    textAlign: "justify",
+  },
+  section: {
+    padding: "0 40px",
+    marginBottom: "30px",
+  },
+  sectionTitle: {
+    fontSize: "18px",
+    fontWeight: "bold",
+    marginBottom: "15px",
+    color: "#000",
+    textTransform: "uppercase",
+    borderBottom: "2px solid #000",
+    paddingBottom: "5px",
+  },
+  skillsList: {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "8px",
+    fontSize: "14px",
+  },
+  skillItem: {
+    background: "#f0f0f0",
+    padding: "5px 12px",
+    borderRadius: "3px",
+    display: "inline-block",
+  },
+  projectItem: {
+    marginBottom: "25px",
+  },
+  projectHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    marginBottom: "8px",
+    flexWrap: "wrap",
+  },
+  projectTitle: {
+    fontSize: "16px",
+    fontWeight: "bold",
+    color: "#000",
+  },
+  duration: {
+    fontSize: "13px",
+    color: "#666",
+    whiteSpace: "nowrap",
+  },
+  durationBadge: {
+    display: "inline-block",
+    background: "#e8e8e8",
+    padding: "2px 8px",
+    borderRadius: "3px",
+    fontSize: "12px",
+    marginLeft: "10px",
+    color: "#666",
+  },
+  techStack: {
+    fontSize: "14px",
+    color: "#666",
+    marginBottom: "10px",
+  },
+  projectDetails: {
+    marginTop: "10px",
+  },
+  projectList: {
+    marginLeft: "20px",
+    marginTop: "8px",
+    paddingLeft: 0,
+  },
+  projectListItem: {
+    fontSize: "14px",
+    marginBottom: "8px",
+    lineHeight: "1.6",
+  },
+  projectLink: {
+    marginTop: "8px",
+    fontSize: "14px",
+  },
+  educationItem: {
+    marginBottom: "25px",
+  },
+  educationHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    marginBottom: "8px",
+    flexWrap: "wrap",
+  },
+  educationDegree: {
+    fontSize: "16px",
+    fontWeight: "bold",
+    color: "#000",
+  },
+  institution: {
+    fontSize: "14px",
+    color: "#666",
+    marginBottom: "5px",
+  },
+  location: {
+    fontSize: "13px",
+    color: "#888",
+    marginBottom: "10px",
+  },
+  additionalInfo: {
+    fontSize: "14px",
+    lineHeight: "1.7",
+  },
+  footer: {
+    textAlign: "center",
+    padding: "30px 40px",
+  },
+  btnDownload: {
+    background: "#000",
+    color: "white",
+    padding: "12px 30px",
+    fontSize: "14px",
+    fontWeight: "600",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    transition: "background 0.2s ease-in-out",
+  },
 };
 
 export default Resume;
