@@ -13,7 +13,7 @@ const resumeData = {
     "Aspiring Software Engineer pursuing B.Tech in Computer Science with demonstrated expertise in developing innovative, scalable, and user-focused applications. Proficient in full-stack development using JavaScript, React.js, Node.js, and MERN stack technologies. Experienced in building real-time communication platforms, implementing secure authentication systems, and developing interactive educational tools. Skilled in algorithm visualization, system programming, and backend architecture design. Strong foundation in data structures, database management, and modern web technologies. Demonstrates excellent problem-solving abilities, code optimization skills, and commitment to continuous learning in fast-paced development environments.",
   education: [
     {
-      degree: "B.Tech/B.E. | Computer Science",
+      degree: "B.Tech | Computer Science",
       institution: "Visvesvaraya National Institute of Technology, Nagpur",
       location: "Nagpur, Maharashtra",
       duration: "Aug 2022 - May 2026",
@@ -32,9 +32,9 @@ const resumeData = {
     },
   ],
   skills: [
-    "C++", "JavaScript", "React.js", "Node.js", "Express.js",
-    "MySQL", "WebSockets", "REST APIs", "JWT Authentication",
-    "Data Structures", "AWS", "Stripe", "GitHub", "Postman", "Agile Methodologies"
+    "Data Structures" , "C++", "MySQL", "JavaScript", "Node.js", "Express.js",
+    "React.js", "WebSockets","REST APIs", "JWT Authentication", "OAuth2.0", 
+     "AWS", "Stripe", "GitHub", "Postman", "Agile Methodologies"
   ],
   projects: [
     {
