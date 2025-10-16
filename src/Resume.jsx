@@ -39,14 +39,15 @@ const resumeData = {
   projects: [
     {
       title: "Convoo — Real-Time Chat and Video Communication Platform",
-      duration: "May 2025 - Jun 2025",
-      durationBadge: "2 Months",
-      techStack: "MERN (MongoDB, Express.js, React.js, Node.js), WebSocket, ZegoCloud, REST APIs, JWT Authentication",
+duration: "May 2025 - Jun 2025",
+durationBadge: "2 Months",
+techStack: "MERN (MongoDB, Express.js, React.js, Node.js), WebSocket, ZegoCloud, REST APIs, JWT Authentication, BullMQ, Nodemailer",
       points: [
         "Developed and deployed a full-stack MERN application enabling real-time messaging and peer-to-peer video calling using WebSocket and ZegoCloud, enhancing user communication experience.",
         "Implemented secure user authentication and authorization using JWT and bcrypt, ensuring robust data privacy and session management.",
-        "Optimized backend performance with Express.js and MongoDB, achieving low-latency communication and scalable message handling for concurrent users.",
-        "Deployed application using Render (backend) and Vercel (frontend), establishing continuous integration pipeline and ensuring high availability."
+        "Integrated BullMQ with Nodemailer to handle background job queues for email notifications, improving user engagement and ensuring reliable message delivery.",
+        "Built a scalable and responsive backend with Express.js, supporting concurrent real-time messaging and low-latency communication.",
+        "Deployed application using Render (backend) and Vercel (frontend), establishing a continuous integration pipeline and ensuring high availability.",
       ],
       url: "https://chat-app-rho-ashy.vercel.app/"
     },
@@ -81,9 +82,10 @@ const resumeData = {
       durationBadge: "1 Month",
       techStack: "C Programming",
       points: [
-        "Implemented a dynamic memory allocation and deallocation simulator in C, mimicking heap management processes to demonstrate low-level memory operations.",
-        "Delivered an interactive console-based tool to allocate and deallocate memory blocks, merge adjacent free blocks, and display memory status in real time.",
-        "Enhanced understanding of operating system memory management concepts including fragmentation, coalescing, and memory block tracking."
+"Implemented a dynamic memory allocation and deallocation simulator in C, applying the best-fit algorithm (commonly used by compilers) to efficiently manage heap memory and reduce fragmentation.",
+ "Delivered an interactive console-based tool to allocate/deallocate over 10,000 memory blocks, merge adjacent free blocks, and display real-time memory status, improving visibility into low-level memory operations.",
+ "Optimized memory usage by minimizing fragmentation and wastage, reinforcing understanding of operating system concepts such as memory block tracking, fragmentation, and coalescing."
+
       ],
       url: "https://github.com/Hymanshu-jha/System_Programming"
     },
