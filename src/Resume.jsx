@@ -34,7 +34,7 @@ const resumeData = {
   skills: [
     "Data Structures" , "C++", "MySQL", "JavaScript", "Node.js", "Express.js",
     "React.js", "WebSockets","REST APIs", "JWT Authentication", "OAuth2.0", 
-     "AWS", "Stripe", "GitHub", "Postman", "Agile Methodologies"
+    "BullMQ", "Stripe", "GitHub", "Postman", "Agile Methodologies"
   ],
   projects: [
     {
