@@ -62,7 +62,7 @@ techStack: "MERN (MongoDB, Express.js, React.js, Node.js), WebSocket, ZegoCloud,
         "Designed a scalable backend architecture with Node.js and Express.js, ensuring high performance and fault tolerance under concurrent usage scenarios.",
         "Implemented OAuth2.0 for secure third-party authentication and authorization, improving platform security and user onboarding experience."
       ],
-      url: "https://appointment-booking-system-tau.vercel.app/"
+      url: "https://github.com/Hymanshu-jha/Appointment-Booking-System"
     },
     {
       title: "Sorting Visualizer — Interactive Algorithm Visualization Tool",
