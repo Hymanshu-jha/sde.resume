@@ -151,9 +151,9 @@ const Resume = () => {
 };
 
 const styles = {
-  body: {
+ body: {
     fontFamily: "'Calibri', 'Arial', sans-serif",
-    lineHeight: "1.4",
+    lineHeight: "1.3",
     color: "#000",
     background: "#f5f5f5",
     padding: "20px",
