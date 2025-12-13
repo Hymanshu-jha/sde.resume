@@ -6,9 +6,9 @@ const resumeData = {
   email: "himanshujhaa4262@gmail.com",
   phone: "+91-8591227854",
   location: "Nagpur, Maharashtra",
-  linkedin: "linkedin.com/in/himanshu-kumar-a83388342",
-  github: "github.com/Hymanshu-jha",
-  leetcode: "leetcode.com/u/kaadhale",
+  linkedin: "https://www.linkedin.com/in/himanshu-kumar-a83388342/",
+  github: "https://github.com/Hymanshu-jha",
+  leetcode: "https://leetcode.com/u/kaadhale/",
   summary:
     "Computer Science student with hands-on experience building full-stack applications using MERN stack. Solved 500+ DSA problems to enhance problem-solving and algorithmic skills. Skilled in real-time communication systems, payment integration, and algorithm optimization. Proven ability to deliver scalable solutions with clean, maintainable code.",
   education: [
@@ -19,11 +19,11 @@ const resumeData = {
     }
   ],
   skills: {
-    "Languages": "C++, JavaScript, SQL",
+    "Languages": "C++, JavaScript",
     "Frontend": "React.js",
     "Backend": "Node.js, Express.js, REST APIs, WebSockets",
-    "Database": "MongoDB, MySQL",
-    "Tools & Technologies": "GitHub, JWT, OAuth2.0, Stripe, BullMQ, Postman"
+    "Database": "MySQL",
+    "Tools & Technologies": "GitHub, GitLab CI/CD, Postman, OAuth2.0, BullMQ"
   },
   projects: [
     {
@@ -86,7 +86,7 @@ const Resume = () => {
             {resumeData.email} | {resumeData.phone} | {resumeData.location}
           </div>
           <div style={styles.links}>
-            {resumeData.linkedin} | {resumeData.github} | {resumeData.leetcode}
+            <a href={resumeData.linkedin} target="_blank" rel="noopener noreferrer" style={styles.link}>LinkedIn</a> | <a href={resumeData.github} target="_blank" rel="noopener noreferrer" style={styles.link}>GitHub</a> | <a href={resumeData.leetcode} target="_blank" rel="noopener noreferrer" style={styles.link}>LeetCode</a>
           </div>
         </header>
 
@@ -115,7 +115,7 @@ const Resume = () => {
                 <span style={styles.projectTitle}>{project.title}</span>
                 <span style={styles.duration}>{project.duration}</span>
               </div>
-              <div style={styles.techStack}>{project.techStack} | <a href={`https://${project.url}`} target="_blank" rel="noopener noreferrer" style={styles.link}>{project.url}</a></div>
+              <div style={styles.techStack}>{project.techStack} | <a href={`https://${project.url}`} target="_blank" rel="noopener noreferrer" style={styles.link}>Link</a></div>
               <ul style={styles.bulletList}>
                 {project.points.map((point, pIdx) => (
                   <li key={pIdx} style={styles.bulletItem}>{point}</li>
