@@ -9,8 +9,8 @@ const resumeData = {
   linkedin: "https://www.linkedin.com/in/himanshu-kumar-a83388342/",
   github: "https://github.com/Hymanshu-jha",
   leetcode: "https://leetcode.com/u/kaadhale/",
-  summary:
-    "Computer Science student with hands-on experience building full-stack applications using MERN stack. Solved 500+ DSA problems to enhance problem-solving and algorithmic skills. Skilled in real-time communication systems, payment integration, and algorithm optimization. Proven ability to deliver scalable solutions with clean, maintainable code.",
+ summary:
+    "Computer Science student with hands-on experience building full-stack applications using MERN stack. Solved 500+ DSA problems to enhance problem-solving and algorithmic skills. Skilled in real-time communication systems, payment integration, and algorithm optimization. Actively exploring Machine Learning and Artificial Intelligence with strong foundations in Computer Science and Mathematics to quickly adapt to emerging technologies. Proven ability to deliver scalable solutions with clean, maintainable code.",
   education: [
     {
       degree: "B.Tech in Computer Science Engineering",
