@@ -10,7 +10,7 @@ const resumeData = {
   github: "github.com/Hymanshu-jha",
   leetcode: "leetcode.com/u/kaadhale",
   summary:
-    "Computer Science student with hands-on experience building full-stack applications using MERN stack. Solved 500+ LeetCode problems to enhance problem-solving and algorithmic skills. Skilled in real-time communication systems, payment integration, and algorithm optimization. Proven ability to deliver scalable solutions with clean, maintainable code.",
+    "Computer Science student with hands-on experience building full-stack applications using MERN stack. Solved 500+ DSA problems to enhance problem-solving and algorithmic skills. Skilled in real-time communication systems, payment integration, and algorithm optimization. Proven ability to deliver scalable solutions with clean, maintainable code.",
   education: [
     {
       degree: "B.Tech in Computer Science Engineering",
@@ -20,7 +20,7 @@ const resumeData = {
   ],
   skills: {
     "Languages": "C++, JavaScript, SQL",
-    "Frontend": "React.js, HTML5, CSS3",
+    "Frontend": "React.js",
     "Backend": "Node.js, Express.js, REST APIs, WebSockets",
     "Database": "MongoDB, MySQL",
     "Tools & Technologies": "Git, JWT, OAuth2.0, Stripe, BullMQ, Postman"
