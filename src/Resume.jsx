@@ -10,7 +10,8 @@ const resumeData = {
   github: "https://github.com/Hymanshu-jha",
   leetcode: "https://leetcode.com/u/kaadhale/",
  summary:
-    "Aspiring Software Engineer with hands-on experience building full-stack applications using MERN stack. Solved 500+ DSA problems to enhance problem-solving and algorithmic skills. Skilled in real-time communication systems, payment integration, and algorithm optimization. Actively exploring Machine Learning and Artificial Intelligence with strong foundations in Computer Science and Mathematics to quickly adapt to emerging technologies. Proven ability to deliver scalable solutions with clean, maintainable code.",
+    "Aspiring Software Engineer with hands-on experience building full-stack web applications using the MERN stack (React, Node.js, Express, MongoDB). Solved 500+ DSA problems, strengthening problem-solving, data structures, and algorithmic thinking. Experienced in real-time communication systems, secure payment integration, RESTful API development, and performance-aware backend design. Actively exploring Machine Learning and Artificial Intelligence with strong foundations in Computer Science and Mathematics. Demonstrated ability to write clean, maintainable code and deliver production-ready solutions."
+,
   education: [
     {
       degree: "B.Tech in Computer Science Engineering",
