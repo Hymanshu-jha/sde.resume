@@ -10,7 +10,7 @@ const resumeData = {
   github: "https://github.com/Hymanshu-jha",
   leetcode: "https://leetcode.com/u/kaadhale/",
  summary:
-    "Aspiring Software Engineer with hands-on experience building full-stack web applications using the MERN stack (React, Node.js, Express, MongoDB). Solved 500+ DSA problems, strengthening problem-solving, data structures, and algorithmic thinking. Experienced in real-time communication systems, secure payment integration, RESTful API development, and performance-aware backend design. Actively exploring Machine Learning and Artificial Intelligence with strong foundations in Computer Science and Mathematics. Demonstrated ability to write clean, maintainable code and deliver production-ready solutions."
+    "Aspiring Software Engineer with hands-on experience building full-stack web applications. Solved 500+ DSA problems, strengthening problem-solving, data structures, and algorithmic thinking. Experienced in real-time communication systems, secure payment integration, RESTful API development, and performance-aware backend design. Actively exploring Machine Learning and Artificial Intelligence with strong foundations in Computer Science and Mathematics. Demonstrated ability to write clean, maintainable code and deliver production-ready solutions."
 ,
   education: [
     {
@@ -30,18 +30,19 @@ const resumeData = {
     {
       title: "Convoo — Real-Time Chat & Video Platform",
       duration: "May 2025 - Jun 2025",
-      techStack: "MERN Stack, WebSocket, ZegoCloud, JWT, BullMQ",
+      techStack: "React, Node.js, Express, WebSocket, ZegoCloud, JWT, BullMQ",
       points: [
         "Built full-stack real-time messaging app with video calling for 1000+ concurrent users using WebSocket and ZegoCloud",
         "Implemented JWT authentication with bcrypt encryption, reducing unauthorized access by 100%",
-        "Automated email notifications using BullMQ job queues, improving user engagement by 40%"
+        "Automated email notifications using BullMQ job queues, improving user engagement by 40%",
+        "Deployed frontend on Vercel and backend on Render with automated deployments triggered on Git commits, enabling a CI/CD workflow"
       ],
       url: "chat-app-rho-ashy.vercel.app"
     },
     {
       title: "BookIt — Appointment Scheduling Platform",
       duration: "Jun 2025 - Jul 2025",
-      techStack: "MERN Stack, Stripe API, OAuth2.0, OpenStreet API",
+      techStack: "React, Node.js, Express, Stripe API, OAuth2.0, OpenStreet API",
       points: [
         "Developed appointment booking system with Stripe payment integration processing transactions securely",
         "Integrated OAuth2.0 and OpenStreet API for seamless authentication and location-based provider discovery",
