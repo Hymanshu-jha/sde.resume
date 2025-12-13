@@ -23,7 +23,7 @@ const resumeData = {
     "Frontend": "React.js",
     "Backend": "Node.js, Express.js, REST APIs, WebSockets",
     "Database": "MongoDB, MySQL",
-    "Tools & Technologies": "Git, JWT, OAuth2.0, Stripe, BullMQ, Postman"
+    "Tools & Technologies": "GitHub, JWT, OAuth2.0, Stripe, BullMQ, Postman"
   },
   projects: [
     {
@@ -44,7 +44,8 @@ const resumeData = {
       points: [
         "Developed appointment booking system with Stripe payment integration processing transactions securely",
         "Integrated OAuth2.0 and OpenStreet API for seamless authentication and location-based provider discovery",
-        "Designed scalable RESTful APIs handling 500+ concurrent requests with <200ms response time"
+        "Optimized API response time by reducing redundant database queries and using efficient data models"
+
       ],
       url: "github.com/Hymanshu-jha/Appointment-Booking-System"
     },
@@ -137,7 +138,7 @@ const Resume = () => {
           ))}
         </div>
 
-        <footer style={styles.footer}>
+        <footer style={styles.footer} className="no-print">
           <button style={styles.btnDownload} onClick={handleDownloadPDF}>
             Download PDF
           </button>
@@ -306,6 +307,9 @@ const printStyles = `
     @page {
       size: A4;
       margin: 0.5in;
+    }
+    .no-print {
+      display: none !important;
     }
   }
 `;
